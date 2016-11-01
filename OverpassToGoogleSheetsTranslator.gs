@@ -8,11 +8,11 @@ function OverpassToGoogleSheets() {
     //Explore using OSM API to directly upload.
         
     //OverpassQueryBuilder();
-    //var query = GetOverpassQueryFromUser()
+    var query = GetOverpassQueryFromUser()
     
     //var query = '[out:json][timeout:3600];(area[name="Telangana"];node["place"](area)["name:te"!~"."](area););out meta;>;out meta qt;'
     //var query = '[out:json][timeout:3600];(node["place"]["name:ta"!~"."](5.916667,79.516667,9.833333,81.866667););out meta;>;out meta qt;';
-    var query = '[out:json][timeout:3600];(node["place"~"town"]["name:ta"!~"."]({{geocodeBbox:India}}););out meta;>;out meta qt;';
+    //var query = '[out:json][timeout:3600];(node["place"~"town"]["name:ta"!~"."]({{geocodeBbox:India}}););out meta;>;out meta qt;';
     var jsonresponse = QueryOverpass(query);
     ParseReponsePopulateSheets(jsonresponse);
 }
