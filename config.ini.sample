@@ -1,0 +1,7 @@
+[DEFAULT]
+UPDATE_TYPE = Node|Way -- TBD Relation
+
+[OSM]
+OPENSTREETMAP_USERNAME = Your-OSM-Username
+OPENSTREETMAP_PASSWORD = Your-OSM-Password
+
